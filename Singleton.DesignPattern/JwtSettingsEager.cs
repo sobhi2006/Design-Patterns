@@ -37,14 +37,14 @@ public sealed class JwtSettingsEager
         return Instance;
     }
 
-    public string Secret { get; set; } = null!;
-    public string Issuer { get; set; } = null!;
-    public string Audience { get; set; } = null!;
-    public bool ValidateIssuer { get; set; }
-    public bool ValidateAudience { get; set; }
-    public bool ValidateLifetime { get; set; }
-    public bool ValidateIssuerSigningKey { get; set; }
-    public int TokenExpiredInMinutes { get; set; }
-    public int RefreshTokenExpiredInMinutes { get; set; }
+    public string Secret { get; } = null!;
+    public string Issuer { get; } = null!;
+    public string Audience { get; } = null!;
+    public bool ValidateIssuer { get; }
+    public bool ValidateAudience { get; }
+    public bool ValidateLifetime { get; }
+    public bool ValidateIssuerSigningKey { get; }
+    public int TokenExpiredInMinutes { get; }
+    public int RefreshTokenExpiredInMinutes { get; }
 }
 
