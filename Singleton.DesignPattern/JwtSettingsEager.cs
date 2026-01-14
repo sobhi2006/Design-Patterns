@@ -37,9 +37,9 @@ public sealed class JwtSettingsEager
         return Instance;
     }
 
-    public string Secret { get; } = null!;
-    public string Issuer { get; } = null!;
-    public string Audience { get; } = null!;
+    public string Secret { get; }
+    public string Issuer { get; }
+    public string Audience { get; }
     public bool ValidateIssuer { get; }
     public bool ValidateAudience { get; }
     public bool ValidateLifetime { get; }
