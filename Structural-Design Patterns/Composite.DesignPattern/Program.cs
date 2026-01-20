@@ -2,7 +2,6 @@
 {
     public static void Main(string[] args)
     {
-        Thread.Sleep(10000);
         var laptop = new Product("Laptop", 1200m);
         var mouse = new Product("Mouse", 25m);
         var keyboard = new Product("Keyboard", 45m);
@@ -15,7 +14,7 @@
         var Bundle2 = new Bundle();
         var monitor = new Product("Monitor", 300m);
         Bundle2.AddItem(monitor);
-        Bundle2.AddItem(Bundle); // Nested bundle
+        Bundle.AddItem(Bundle2); // Nested bundle
 
         System.Console.WriteLine($"Total price of the bundle: ${Bundle.GetPrice()}");
     }
