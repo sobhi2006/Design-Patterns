@@ -1,0 +1,8 @@
+GET http://localhost:5128/
+Content-Type: application/json
+
+{
+    "UserId" : 12,
+    "OrderId" : 23,
+    "Quantity" : 1
+}
