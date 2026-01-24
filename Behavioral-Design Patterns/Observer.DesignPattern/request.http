@@ -1,0 +1,8 @@
+###
+POST http://localhost:5281/user/create
+Content-Type: application/json
+
+
+###
+POST http://localhost:5281/detach-event/Email
+Content-Type: application/json
